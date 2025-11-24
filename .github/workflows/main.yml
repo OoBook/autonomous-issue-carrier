@@ -33,7 +33,7 @@ jobs:
           echo "can_publish=${{ needs.check-dist.outputs.can_publish }}" >> $GITHUB_OUTPUT
           echo "has_incompatible_changes=${{ needs.check-dist.outputs.has_incompatible_changes }}" >> $GITHUB_OUTPUT
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Create Tag
         uses: oobook/automated-tag@v1
         id: tag-generation
