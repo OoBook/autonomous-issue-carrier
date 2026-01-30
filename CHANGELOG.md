@@ -2,6 +2,16 @@
 
 All notable changes to `Autonomous Issue Carrier` will be documented in this file
 
+## v1.0.3 - 2026-01-30
+
+### :recycle: Refactors
+
+- rename 'Automated Issue Carrier' to 'Autonomous Issue Carrier' across all relevant files and update associated links in documentation. by @oguzhanbukcuoglu in https://github.com/OoBook/autonomous-issue-carrier/commit/d7e45543e8c15cfaa99bcb0e7a98979950fd6c9e
+
+### :beers: Other Stuff
+
+- change branding icon as 'arrow-right-circle' by @web-flow in https://github.com/OoBook/autonomous-issue-carrier/commit/8a4885aa4fa17fff6a64c57f8001cbe1ee2160a2
+
 ## v1.0.2 - 2025-07-03
 
 ### :recycle: Refactors
