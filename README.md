@@ -1,9 +1,9 @@
-# Automated Issue Carrier
+# Autonomous Issue Carrier
 
-[![Main](https://img.shields.io/github/actions/workflow/status/oobook/automated-issue-carrier/main.yml?label=build&logo=github-actions)](https://github.com/oobook/automated-issue-carrier/actions?workflow=main)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/oobook/automated-issue-carrier?label=release&logo=GitHub)](https://github.com/oobook/automated-issue-carrier/releases)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/release-date/oobook/automated-issue-carrier?label=release%20date&logo=GitHub)](https://github.com/oobook/automated-issue-carrier/releases)
-![GitHub License](https://img.shields.io/github/license/oobook/automated-issue-carrier)
+[![Main](https://img.shields.io/github/actions/workflow/status/oobook/autonomous-issue-carrier/main.yml?label=build&logo=github-actions)](https://github.com/oobook/autonomous-issue-carrier/actions?workflow=main)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/oobook/autonomous-issue-carrier?label=release&logo=GitHub)](https://github.com/oobook/autonomous-issue-carrier/releases)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/release-date/oobook/autonomous-issue-carrier?label=release%20date&logo=GitHub)](https://github.com/oobook/autonomous-issue-carrier/releases)
+![GitHub License](https://img.shields.io/github/license/oobook/autonomous-issue-carrier)
 
 A GitHub action that automatically adds issues to GitHub Projects V2 based on labels and updates project item fields with custom values.
 
@@ -69,7 +69,7 @@ jobs:
   add-to-project:
     runs-on: ubuntu-latest
     steps:
-      - uses: oobook/automated-issue-carrier@v1
+      - uses: oobook/autonomous-issue-carrier@v1
         with:
           gh_token: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -91,7 +91,7 @@ jobs:
   add-bugs-to-project:
     runs-on: ubuntu-latest
     steps:
-      - uses: oobook/automated-issue-carrier@v1
+      - uses: oobook/autonomous-issue-carrier@v1
         with:
           gh_token: ${{ secrets.GITHUB_TOKEN }}
           labels: "bug"
@@ -114,7 +114,7 @@ jobs:
   add-to-project:
     runs-on: ubuntu-latest
     steps:
-      - uses: oobook/automated-issue-carrier@v1
+      - uses: oobook/autonomous-issue-carrier@v1
         with:
           gh_token: ${{ secrets.GITHUB_TOKEN }}
           labels: "bug enhancement feature"
@@ -137,7 +137,7 @@ jobs:
   add-critical-bugs:
     runs-on: ubuntu-latest
     steps:
-      - uses: oobook/automated-issue-carrier@v1
+      - uses: oobook/autonomous-issue-carrier@v1
         with:
           gh_token: ${{ secrets.GITHUB_TOKEN }}
           labels: "bug,critical"
@@ -160,7 +160,7 @@ jobs:
   add-to-project:
     runs-on: ubuntu-latest
     steps:
-      - uses: oobook/automated-issue-carrier@v1
+      - uses: oobook/autonomous-issue-carrier@v1
         with:
           gh_token: ${{ secrets.GITHUB_TOKEN }}
           # Matches: (bug AND critical) OR (enhancement AND accepted)
@@ -184,7 +184,7 @@ jobs:
   add-to-specific-project:
     runs-on: ubuntu-latest
     steps:
-      - uses: oobook/automated-issue-carrier@v1
+      - uses: oobook/autonomous-issue-carrier@v1
         with:
           gh_token: ${{ secrets.GITHUB_TOKEN }}
           projects: "Sprint Planning"
@@ -208,7 +208,7 @@ jobs:
   add-with-fields:
     runs-on: ubuntu-latest
     steps:
-      - uses: oobook/automated-issue-carrier@v1
+      - uses: oobook/autonomous-issue-carrier@v1
         with:
           gh_token: ${{ secrets.GITHUB_TOKEN }}
           labels: "bug"
@@ -232,7 +232,7 @@ jobs:
   add-with-advanced-fields:
     runs-on: ubuntu-latest
     steps:
-      - uses: oobook/automated-issue-carrier@v1
+      - uses: oobook/autonomous-issue-carrier@v1
         with:
           gh_token: ${{ secrets.GITHUB_TOKEN }}
           labels: "enhancement"
@@ -256,7 +256,7 @@ jobs:
   force-update:
     runs-on: ubuntu-latest
     steps:
-      - uses: oobook/automated-issue-carrier@v1
+      - uses: oobook/autonomous-issue-carrier@v1
         with:
           gh_token: ${{ secrets.GITHUB_TOKEN }}
           labels: "priority-changed"
@@ -281,7 +281,7 @@ jobs:
   test-config:
     runs-on: ubuntu-latest
     steps:
-      - uses: oobook/automated-issue-carrier@v1
+      - uses: oobook/autonomous-issue-carrier@v1
         with:
           gh_token: ${{ secrets.GITHUB_TOKEN }}
           test: true
@@ -306,7 +306,7 @@ jobs:
   process-issues:
     runs-on: ubuntu-latest
     steps:
-      - uses: oobook/automated-issue-carrier@v1
+      - uses: oobook/autonomous-issue-carrier@v1
         id: issue-processor
         with:
           gh_token: ${{ secrets.GITHUB_TOKEN }}
@@ -368,7 +368,7 @@ The action will:
 Use `test: true` to run in test mode without making actual changes:
 
 ```yaml
-- uses: oobook/automated-issue-carrier@v1
+- uses: oobook/autonomous-issue-carrier@v1
   with:
     gh_token: ${{ secrets.GITHUB_TOKEN }}
     test: true

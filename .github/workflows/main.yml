@@ -35,12 +35,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Create Tag
-        uses: oobook/automated-tag@v1
+        uses: oobook/autonomous-tag@v1
         id: tag-generation
         with:
           gh_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Release
-        uses: oobook/automated-release@v1
+        uses: oobook/autonomous-release@v1
         id: release-generation
         with:
           gh_token: ${{ secrets.GITHUB_TOKEN }}

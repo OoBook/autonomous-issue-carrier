@@ -1,12 +1,12 @@
 {
-  "name": "automated-issue-carrier",
+  "name": "autonomous-issue-carrier",
   "version": "1.0.0",
   "description": "This action creates or updates a project item for an issue in a project.",
-  "homepage": "https://github.com/oobook/automated-issue-carrier#readme",
+  "homepage": "https://github.com/oobook/autonomous-issue-carrier#readme",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oobook/automated-issue-carrier.git"
+    "url": "git+https://github.com/oobook/autonomous-issue-carrier.git"
   },
   "scripts": {
     "local": "npx @github/local-action run ./ src/index.js .env",
@@ -26,6 +26,7 @@
     "Github",
     "Actions",
     "Automated",
+    "Autonomous",
     "Issue",
     "Project",
     "Move",
